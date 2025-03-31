@@ -39,7 +39,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/JayashreeKM118/Selenium_2025.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/resources/testNg/sanity.xml"
+                    bat "mvn clean test"
 
                 }
             }
