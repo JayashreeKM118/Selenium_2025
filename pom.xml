@@ -92,8 +92,8 @@
                     <reuseForks>true</reuseForks>
 
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>src/test/java/resources/testNg/sanity.xml</suiteXmlFile>-->
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                        <suiteXmlFile>src/test/java/resources/testNg/sanity.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
                     </suiteXmlFiles>
 
                     <argLine>
