@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OpenCart Sanity Suite" verbose="1" parallel="tests" thread-count="3">
+<listeners>
+    <listener class-name="listeners.ExtentReportListener"/>
+    <listener class-name="listeners.TestAllureListener"/>
+    <listener class-name="listeners.AnnotationTransformer"/>
+</listeners>
+    <test name="Login Page Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name = "Tests.LoginTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Accounts Page Test">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name = "Tests.AccountsPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Search Page Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name = "Tests.SearchTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
